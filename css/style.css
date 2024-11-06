@@ -11,12 +11,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+*{
+    color: #fff;
+}
+
 html{
     background-color: black;
 }
 
 /* Nav-Bar */
 nav {
+  position: relative;
   background-color: #00000000;
   z-index: 3;
   padding: 0 5%;
@@ -76,9 +81,75 @@ nav {
   position: relative;
   transition: 0.3s;
 }
+/* Fim nav-bar */
 
 a {
   text-decoration: none;
+}
+
+.home{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem 21rem;
+}
+
+.container-home{
+    display: flex;
+    gap: 9.5rem;
+}
+
+.conteudo-home{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8vw;
+}
+
+.texto-home h1{
+    font-size: 3.3vw;
+}
+
+.texto-home p{
+    font-size: 1.64vw;
+}
+
+.texto-home p .green-text{
+    font-weight: bold;
+    background-image: linear-gradient(to right, #02b614, #00FF1A);
+    -webkit-background-clip: text;  /* Suporte para Webkit (Chrome, Safari, Edge) */
+    background-clip: text;  /* Para outros navegadores */
+    color: transparent;
+
+}
+
+.botao-home a{
+    font-size: 1.2vw;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #04B916, #01810D);
+    padding: 0.6vw 3.7vw;
+    border-radius: 0 0.7vw 0.7vw 0.7vw;
+}
+
+.blur{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.blur-centro{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.blur-mobile{
+    display: none;
+}
+
+.imagem-logo img{
+    width: 27.6vw;
 }
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
@@ -151,6 +222,57 @@ a {
   .nav.active .hamburger::before {
     transform: rotate(135deg);
   }
+ /* Fim Nav*/
+
+ .home{
+    padding: 0 12px;
+}
+
+.container-home{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+}
+
+.conteudo-home{
+    gap: 1.4rem;
+}
+
+.imagem-logo img{
+    width: 335px;
+}
+
+.texto-home h1{
+    margin-top: -48px;
+    font-size: 8.2vw;
+}
+
+.texto-home p{
+    font-size: 4.3vw;
+}
+
+.botao-home a{
+    font-size: 4.3vw;
+    padding: 2.6% 20%;
+    border-radius: 0 12px 12px 12px;
+}
+
+.blur{
+    display: none;
+}
+
+.blur-centro{
+    display: none;
+}
+
+.blur-mobile{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
 
 }
 
