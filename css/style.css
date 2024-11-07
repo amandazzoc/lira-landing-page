@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Reset geral */
 *,
@@ -8,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 *{
@@ -26,7 +27,7 @@ nav {
   z-index: 3;
   padding: 0 5%;
   width: 100%;
-  height: 166px;
+  height: 140px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -93,7 +94,17 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 6rem 21rem;
+    padding: 9rem 21rem;
+}
+
+.home::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* espessura da linha */
+    background: linear-gradient(to right, transparent, #00FF1A, transparent);
 }
 
 .container-home{
@@ -109,10 +120,12 @@ a {
 
 .texto-home h1{
     font-size: 3.3vw;
+    font-family: "Roboto", sans-serif;
 }
 
 .texto-home p{
     font-size: 1.64vw;
+    font-family: "Roboto", sans-serif;
 }
 
 .texto-home p .green-text{
@@ -129,6 +142,7 @@ a {
     font-weight: bolder;
     background-image: linear-gradient(to right, #04B916, #01810D);
     padding: 0.6vw 3.7vw;
+    font-family: "Roboto", sans-serif;
     border-radius: 0 0.7vw 0.7vw 0.7vw;
 }
 
@@ -150,6 +164,52 @@ a {
 
 .imagem-logo img{
     width: 27.6vw;
+}
+
+/* quem somos */
+.quem-somos{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 9rem 21rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.texto-qs{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.texto-qs h1{
+  position: relative;
+  font-weight: bolder;
+  padding-left: 10px;
+  font-size: 2vw;
+}
+
+.texto-qs h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%; /* Alinhamento na altura do texto */
+    width: 2px; /* Espessura da linha */
+    background-color: green;
+}
+
+.texto-qs p{
+  padding: 0 4vw;
+  font-size: 1vw;
+  font-weight: 200;
+  line-height: 1.5vw;
 }
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
@@ -225,7 +285,7 @@ a {
  /* Fim Nav*/
 
  .home{
-    padding: 0 12px;
+    padding: 0 1rem 5rem;
 }
 
 .container-home{
@@ -274,12 +334,38 @@ a {
     z-index: 1;
 }
 
+ .quem-somos{
+    padding: 5rem 1rem;
+}
+.texto-qs h1{
+  font-size: 6vw;
+  }
+  .texto-qs p{
+  font-size: 4vw;
+  line-height: 4.4vw;
+  }
+
 }
 
 /*Media query para tablets*/
 @media only screen and (min-width: 701px) and (max-width: 1025px) {
   .hamburger { /*Esconde o hamburguer*/
     display: none;
+  }
+  .home{
+    padding: 0rem 4rem 5rem;
+  }
+
+  .quem-somos{
+    padding: 5rem 4rem;
+  }
+
+  .texto-qs h1{
+  font-size: 3vw;
+  }
+  .texto-qs p{
+  font-size: 1.5vw;
+  line-height: 2vw;
   }
 }
 
@@ -290,5 +376,15 @@ a {
   }
   .nav{
     padding: 0 14%;
+  }
+  .quem-somos{
+    padding: 5rem 17rem;
+  }
+  .texto-qs h1{
+  font-size: 2vw;
+  }
+  .texto-qs p{
+  font-size: 1vw;
+  line-height: 1.7vw;
   }
 }
