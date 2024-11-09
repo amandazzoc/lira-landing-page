@@ -53,7 +53,7 @@ nav {
   height: 2px;
 
   width: auto;
-  background: #00FF1A;
+  background: blue;
   transition: width 0.5s, opacity 0.3s; /* Transição suave da altura e opacidade */
   opacity: 0; /* Inicialmente invisível */
   border-radius: 50%;
@@ -104,7 +104,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px; /* espessura da linha */
-    background: linear-gradient(to right, transparent, #00FF1A, transparent);
+    background: linear-gradient(to right, transparent, blue, transparent);
 }
 
 .container-home{
@@ -130,7 +130,7 @@ a {
 
 .texto-home p .green-text{
     font-weight: bold;
-    background-image: linear-gradient(to right, #02b614, #00FF1A);
+    background-image: linear-gradient(to right, rgb(2, 2, 141),blue);
     -webkit-background-clip: text;  /* Suporte para Webkit (Chrome, Safari, Edge) */
     background-clip: text;  /* Para outros navegadores */
     color: transparent;
@@ -140,7 +140,7 @@ a {
 .botao-home a{
     font-size: 1.2vw;
     font-weight: bolder;
-    background-image: linear-gradient(to right, #04B916, #01810D);
+    background-image: linear-gradient(to right, rgb(2, 2, 141), blue);
     padding: 0.6vw 3.7vw;
     font-family: "Roboto", sans-serif;
     border-radius: 0 0.7vw 0.7vw 0.7vw;
@@ -202,7 +202,7 @@ a {
     top: 0;
     height: 100%; /* Alinhamento na altura do texto */
     width: 2px; /* Espessura da linha */
-    background-color: green;
+    background-color: blue;
 }
 
 .texto-qs p{
