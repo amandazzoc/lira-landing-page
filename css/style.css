@@ -35,7 +35,7 @@ nav {
 }
 
 nav img{
-  width: 11.53;
+  width: 7.4vw;
 }
 
 .nav-list {
@@ -93,90 +93,90 @@ a {
 }
 
 .home{
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 9rem 17.7vw;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 9rem 14.2vw;
+  
 }
 
 .home::after{
   content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* espessura da linha */
-    background: linear-gradient(to right, transparent, blue, transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* espessura da linha */
+  background: linear-gradient(to right, transparent, blue, transparent);
 }
 
 .container-home{
-    display: flex;
-    gap: 9.5rem;
+  display: flex;
+  gap: 9.5rem;
 }
 
 .conteudo-home{
-    display: flex;
-    flex-direction: column;
-    gap: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8vw;
 }
 
 .texto-home h1{
-    width: 90%;
-    font-size: 3vw;
-    font-family: "Roboto", sans-serif;
+  width: 90%;
+  font-size: 3vw;
+  font-family: "Roboto", sans-serif;
 }
 
 .texto-home p{
-    font-size: 1.64vw;
-    font-family: "Roboto", sans-serif;
+  font-size: 1.64vw;
+  font-family: "Roboto", sans-serif;
 }
 
 .texto-home p .green-text{
-    font-weight: bold;
-    background-image: linear-gradient(to right, rgb(2, 2, 141),blue);
-    -webkit-background-clip: text;  /* Suporte para Webkit (Chrome, Safari, Edge) */
-    background-clip: text;  /* Para outros navegadores */
-    color: transparent;
-
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(2, 2, 141),blue);
+  -webkit-background-clip: text;  /* Suporte para Webkit (Chrome, Safari, Edge) */
+  background-clip: text;  /* Para outros navegadores */
+  color: transparent;
 }
 
 .botao-home a{
-    font-size: 1.2vw;
-    font-weight: bolder;
-    background-image: linear-gradient(to right, rgb(2, 2, 141), blue);
-    padding: 0.6vw 3.7vw;
-    font-family: "Roboto", sans-serif;
-    border-radius: 0 0.7vw 0.7vw 0.7vw;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, rgb(2, 2, 141), blue);
+  padding: 0.6vw 3.7vw;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0 0.7vw 0.7vw 0.7vw;
 }
 
 .blur{
-    position: absolute;
-    top: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .blur-centro{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .blur-mobile{
-    display: none;
+  display: none;
 }
 
 .imagem-logo img{
-    width: 27.6vw;
+  width: 27.6vw;
 }
 
 .holder{
   position: relative;
   z-index: 2;
-  width: 100%;
   display: flex;
-  
+  padding: 9vw 14.2vw;
 }
 
 .container{
@@ -269,9 +269,14 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 9rem 14.2vw 0;
+  padding: 5vw 14.2vw 0;
   box-shadow: 0 10px 15px -5px #4D4CDA;
   background-color: #fff;
+}
+
+.holder-ueye .container{
+  width: 100%;
+  padding: 4vw 0 0
 }
 
 .holder-ueye p{
@@ -281,6 +286,7 @@ a {
 
 .holder-ueye h1{
   color: #4B4AD6;
+  font-weight: bolder;
 }
 
 .holder-ueye h1::before{
@@ -304,7 +310,6 @@ a {
 
 .holder-ueye .img-software img{
   width: 90%;
-  
 }
 
 .holder-ueye .img-software{
@@ -371,20 +376,35 @@ a {
   justify-content: space-around;
 }
 
+.card-i-head img{
+  width: 5.8vw;
+}
+
 .blur-amanda{
   position: absolute;
-  bottom: -2vw;
+  bottom: 2vw;
   left: 12vw;
 }
 .blur-arthur{
   position: absolute;
-  top: 5vw;
+  top: 8vw;
   left: 47vw;
 }
 .blur-giovana{
   position: absolute;
-  bottom: -2vw;
+  bottom: 2vw;
   right: 12vw;
+}
+
+.footer{
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer{
+  width: 6vw;
 }
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
@@ -572,7 +592,57 @@ a {
     bottom: 0;
   }
   
+  .blur-amanda{
+    width: 60vw;
+    top: 55vw;
+    left: 40vw ;
+  }
 
+  .blur-arthur{
+    width: 60vw;
+    top: 115vw;
+    left: 0;
+  }
+
+  .blur-giovana{
+    width: 60vw;
+    bottom: 0;
+    right: 0;
+  }
+
+  .cards-integrantes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4vw 10vw;
+  }
+
+  .card-i{
+    width: 70%;
+    border-radius: 0 12px 12px;
+  }
+  
+  .card-i-footer img{
+    width: 5.7vw;
+  }
+
+  .card-i-head img{
+    width: 16vw;
+  }
+
+  .card-i-body h1{
+    font-size: 3.8vw;
+  }
+
+  .card-i-body p{
+    font-size: 3vw;
+    padding-bottom: 2vw;
+  }
+
+  .logo-footer, .nav img{
+    width: 19vw;
+  }
 }
 
 /*Media query para tablets*/
@@ -625,9 +695,41 @@ a {
     font-size: 1.3vw;
   }
 
-
   .holder-ueye h1::before{
     height: 3.3vw;
+  }
+
+  .blur-amanda{
+    bottom: 0;
+    left: 1vw;
+  }
+  .blur-arthur{
+    top: 4vw;
+    left: 40vw;
+  }
+  .blur-giovana{
+    bottom: 0;
+    right: 1vw;
+  }
+
+  .card-i{
+    width: 20vw;
+  }
+
+  .card-i-body h1{
+    font-size: 1.5vw;
+  }
+  
+  .card-i-body p{
+    font-size: 1.3vw;
+  }
+  
+  .card-i-footer img{
+    width: 1.6vw;
+  }
+  
+  .card-i-head img{
+    width: 7vw;
   }
 }
 
@@ -638,15 +740,5 @@ a {
   }
   .nav{
     padding: 0 14%;
-  }
-  .holder{
-    padding: 5rem 17rem;
-  }
-  .texto h1{
-  font-size: 2vw;
-  }
-  .texto p{
-  font-size: 1vw;
-  line-height: 1.7vw;
   }
 }
