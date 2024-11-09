@@ -34,6 +34,10 @@ nav {
   align-items: center;
 }
 
+nav img{
+  width: 11.53;
+}
+
 .nav-list {
   display: flex;
   gap: 85px;
@@ -94,7 +98,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 9rem 21rem;
+    padding: 9rem 17.7vw;
 }
 
 .home::after{
@@ -119,7 +123,8 @@ a {
 }
 
 .texto-home h1{
-    font-size: 3.3vw;
+    width: 90%;
+    font-size: 3vw;
     font-family: "Roboto", sans-serif;
 }
 
@@ -173,7 +178,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 9rem 21rem;
+  padding: 9rem 17.7vw;
 }
 
 .container{
@@ -210,6 +215,48 @@ a {
   font-size: 1vw;
   font-weight: 200;
   line-height: 1.5vw;
+}
+
+.cards-valores{
+  display: flex;
+  gap: 1rem;
+  padding-top: 2vw;
+}
+
+.card{
+  width: 25%;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, rgba(0, 0, 255, 0) 0%, rgba(0, 0, 255, 1)25%, rgba(0, 0, 255, 1) 75%, rgba(0, 0, 255, 0) 100%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-head{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-head img{
+  width: 2.7vw;
+}
+
+.card-head h1{
+  font-size: 1.2vw;
+}
+
+.card-body{
+  padding: 0 1.2vw 0.8vw
+}
+
+.card-body p{
+  font-size: 0.9vw;
+  font-weight: 200;
 }
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
