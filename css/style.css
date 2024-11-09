@@ -216,7 +216,7 @@ a {
   font-weight: 200;
   line-height: 1.5vw;
 }
-
+/*valores*/
 .cards-valores{
   display: flex;
   gap: 1rem;
@@ -248,6 +248,7 @@ a {
 
 .card-head h1{
   font-size: 1.2vw;
+  font-weight: 600;
 }
 
 .card-body{
@@ -258,6 +259,7 @@ a {
   font-size: 0.9vw;
   font-weight: 200;
 }
+/*Fim sessão valores*/
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
 @media only screen and (max-width: 700px) {
@@ -331,65 +333,95 @@ a {
   }
  /* Fim Nav*/
 
- .home{
-    padding: 0 1rem 5rem;
-}
+  .home{
+      padding: 0 1rem 5rem;
+  }
 
-.container-home{
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 0;
-}
+  .container-home{
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 0;
+  }
 
-.conteudo-home{
-    gap: 1.4rem;
-}
+  .conteudo-home{
+      gap: 1.4rem;
+  }
 
-.imagem-logo img{
-    width: 335px;
-}
+  .imagem-logo img{
+      width: 335px;
+  }
 
-.texto-home h1{
-    margin-top: -48px;
-    font-size: 8.2vw;
-}
+  .texto-home h1{
+      margin-top: -48px;
+      font-size: 8.2vw;
+  }
 
-.texto-home p{
-    font-size: 4.3vw;
-}
+  .texto-home p{
+      font-size: 4.3vw;
+  }
 
-.botao-home a{
-    font-size: 4.3vw;
-    padding: 2.6% 20%;
-    border-radius: 0 12px 12px 12px;
-}
+  .botao-home a{
+      font-size: 4.3vw;
+      padding: 2.6% 20%;
+      border-radius: 0 12px 12px 12px;
+  }
 
-.blur{
-    display: none;
-}
+  .blur{
+      display: none;
+  }
 
-.blur-centro{
-    display: none;
-}
+  .blur-centro{
+      display: none;
+  }
 
-.blur-mobile{
+  .blur-mobile{
     display: block;
     position: absolute;
     top: 20%;
     left: 0;
     width: 100%;
     z-index: 1;
-}
+  }
 
- .quem-somos{
-    padding: 5rem 1rem;
-}
-.texto-qs h1{
-  font-size: 6vw;
+  .quem-somos{
+      padding: 5rem 1rem;
+  }
+  .texto-qs h1{
+    font-size: 4.8vw;
   }
   .texto-qs p{
-  font-size: 4vw;
-  line-height: 4.4vw;
+    font-size: 3.5vw;
+    line-height: 4.4vw;
+  }
+
+  .cards-valores{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4vw 10vw;
+  }
+
+  .card{
+    width: 100%;
+    gap: 1rem;
+    padding: 3vw;
+  }
+
+  .card-head img{
+    width: 10vw;
+  }
+
+  .card-head h1{
+    font-size: 4.8vw;
+  }
+
+  .card-body{
+    padding: 0 1.2vw 0.8vw
+  }
+
+  .card-body p{
+    font-size: 3.5vw;
+    padding-bottom: 2vw;
   }
 
 }
@@ -408,11 +440,40 @@ a {
   }
 
   .texto-qs h1{
-  font-size: 3vw;
+    font-size: 3vw;
   }
   .texto-qs p{
-  font-size: 1.5vw;
-  line-height: 2vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+  .blur{
+    display: none;
+  }
+
+  .cards-valores{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2vw;
+  }
+
+  .card{
+    padding: 0.8vw;
+  }
+
+  .card-head img{
+    width: 3.6vw;
+  }
+
+  .card-head h1{
+    font-size: 1.7vw;
+  }
+
+  .card-body{
+    padding: 0 1.2vw 0.8vw
+  }
+
+  .card-body p{
+    font-size: 1.3vw;
   }
 }
 
