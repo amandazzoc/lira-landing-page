@@ -170,18 +170,19 @@ a {
 .imagem-logo img{
     width: 27.6vw;
 }
+
 .holder{
   position: relative;
   z-index: 2;
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 9rem 17.7vw;
+  
 }
 
 .container{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .texto{
@@ -198,13 +199,13 @@ a {
 }
 
 .texto h1::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%; /* Alinhamento na altura do texto */
-    width: 2px; /* Espessura da linha */
-    background-color: blue;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%; /* Alinhamento na altura do texto */
+  width: 2px; /* Espessura da linha */
+  background-color: blue;
 }
 
 .texto p{
@@ -223,7 +224,7 @@ a {
   padding-top: 2vw;
 }
 
-.card{
+.card-v{
   width: 25%;
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, rgba(0, 0, 255, 0) 0%, rgba(0, 0, 255, 1)25%, rgba(0, 0, 255, 1) 75%, rgba(0, 0, 255, 0) 100%);
@@ -236,56 +237,63 @@ a {
   gap: 1rem;
 }
 
-.card-head{
+.card-v-head{
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.card-head img{
+.card-v-head img{
   width: 2.7vw;
 }
 
-.card-head h1{
+.card-v-head h1{
   font-size: 1.2vw;
   font-weight: 600;
 }
 
-.card-body{
+.card-v-body{
   padding: 0 1.2vw 0.8vw
 }
 
-.card-body p{
+.card-v-body p{
   font-size: 0.9vw;
   font-weight: 200;
 }
 /*Fim sessão valores*/
 
 /*Sessão nosso projeto*/
-.ueye{
+.holder-ueye{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 9rem 14.2vw 0;
+  box-shadow: 0 10px 15px -5px #4D4CDA;
   background-color: #fff;
 }
 
-.ueye p{
+.holder-ueye p{
   color: #000000;
   font-weight: 400;
 }
 
-.ueye h1{
+.holder-ueye h1{
   color: #4B4AD6;
 }
 
-.ueye h1::before{
+.holder-ueye h1::before{
   background-image: linear-gradient(to bottom, #8c8cf0, #302F98);
   height: 2.5vw;
 }
 
-.ueye .head{
+.holder-ueye .head{
   display: flex;
   justify-content: space-between;
 }
 
-.ueye .head img{
+.holder-ueye .head img{
   width: 4vw;
 }
 
@@ -293,15 +301,90 @@ a {
   color: #4B4AD6;
   font-weight: 500;
 }
-/*Fim sessão nosso projeto*/
 
-.ueye .img-software img{
-  width: 70vw;
+.holder-ueye .img-software img{
+  width: 90%;
+  
 }
 
-.ueye .img-software{
+.holder-ueye .img-software{
   position: relative;
   bottom: 0;
+  display:flex ;
+  justify-content: center;
+  padding-top: 3vw
+}
+
+/*Fim sessão nosso projeto*/
+
+.cards-integrantes{
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+  padding-top: 2vw;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card-i{
+  width: 12.7vw;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 0.6vw 1vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0 0.7vw 0.7vw 0.7vw;
+  box-shadow: 0 6px 15px -5px #0048FF;
+}
+
+.card-i .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #0048FF;
+  top: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card-i-body h1, .card-i-body p{
+  color: #000000;
+  text-align: center;
+}
+
+.card-i-body h1{
+  font-size: 1.26vw;
+}
+
+.card-i-body p{
+  font-size: 0.83vw;
+}
+
+.card-i-footer img{
+  width: 1vw;
+}
+
+.card-i-footer{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.blur-amanda{
+  position: absolute;
+  bottom: -2vw;
+  left: 12vw;
+}
+.blur-arthur{
+  position: absolute;
+  top: 5vw;
+  left: 47vw;
+}
+.blur-giovana{
+  position: absolute;
+  bottom: -2vw;
+  right: 12vw;
 }
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
@@ -377,36 +460,36 @@ a {
  /* Fim Nav*/
 
   .home{
-      padding: 0 1rem 5rem;
+    padding: 0 1rem 5rem;
   }
 
   .container-home{
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
   }
 
   .conteudo-home{
-      gap: 1.4rem;
+    gap: 1.4rem;
   }
 
   .imagem-logo img{
-      width: 335px;
+    width: 335px;
   }
 
   .texto-home h1{
-      margin-top: -48px;
-      font-size: 8.2vw;
+    margin-top: -48px;
+    font-size: 8.2vw;
   }
 
   .texto-home p{
-      font-size: 4.3vw;
+    font-size: 4.3vw;
   }
 
   .botao-home a{
-      font-size: 4.3vw;
-      padding: 2.6% 20%;
-      border-radius: 0 12px 12px 12px;
+    font-size: 4.3vw;
+    padding: 2.6% 20%;
+    border-radius: 0 12px 12px 12px;
   }
 
   .blur{
@@ -427,7 +510,7 @@ a {
   }
 
   .holder{
-      padding: 5rem 1rem;
+    padding: 5rem 1rem;
   }
   .texto h1{
     font-size: 4.8vw;
@@ -444,36 +527,51 @@ a {
     padding: 4vw 10vw;
   }
 
-  .card{
+  .card-v{
     width: 100%;
     gap: 1rem;
     padding: 3vw;
   }
 
-  .card-head img{
+  .card-v-head img{
     width: 10vw;
   }
 
-  .card-head h1{
+  .card-v-head h1{
     font-size: 4.8vw;
   }
 
-  .card-body{
+  .card-v-body{
     padding: 0 1.2vw 0.8vw
   }
 
-  .card-body p{
+  .card-v-body p{
     font-size: 3.5vw;
     padding-bottom: 2vw;
   }
 
-  .ueye .head img{
+  .holder-ueye{
+    padding: 4rem 1rem 0;
+  }
+
+  .holder-ueye .head img{
     width:6vw;
   }
 
-  .ueye h1::before{
+  .holder-ueye h1::before{
     height: 6vw;
   }
+
+  .holder-ueye .img-software img{
+    position: relative;
+    width: 100%;
+  }
+  
+  .holder-ueye .img-software{
+    position: relative;
+    bottom: 0;
+  }
+  
 
 }
 
@@ -507,28 +605,28 @@ a {
     padding-top: 2vw;
   }
 
-  .card{
+  .card-v{
     padding: 0.8vw;
   }
 
-  .card-head img{
+  .card-v-head img{
     width: 3.6vw;
   }
 
-  .card-head h1{
+  .card-v-head h1{
     font-size: 1.5vw;
   }
 
-  .card-body{
+  .card-v-body{
     padding: 0 1.2vw 0.8vw
   }
 
-  .card-body p{
+  .card-v-body p{
     font-size: 1.3vw;
   }
 
 
-  .ueye h1::before{
+  .holder-ueye h1::before{
     height: 3.3vw;
   }
 }
