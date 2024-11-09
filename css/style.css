@@ -170,9 +170,7 @@ a {
 .imagem-logo img{
     width: 27.6vw;
 }
-
-/* quem somos */
-.quem-somos{
+.holder{
   position: relative;
   z-index: 2;
   width: 100%;
@@ -186,21 +184,20 @@ a {
   flex-direction: column;
 }
 
-
-.texto-qs{
+.texto{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.texto-qs h1{
+.texto h1{
   position: relative;
   font-weight: bolder;
   padding-left: 10px;
   font-size: 2vw;
 }
 
-.texto-qs h1::before {
+.texto h1::before {
     content: '';
     position: absolute;
     left: 0;
@@ -210,12 +207,15 @@ a {
     background-color: blue;
 }
 
-.texto-qs p{
+.texto p{
   padding: 0 5vw;
   font-size: 1vw;
   font-weight: 200;
   line-height: 1.5vw;
 }
+
+
+/* quem somos */
 /*valores*/
 .cards-valores{
   display: flex;
@@ -260,6 +260,49 @@ a {
   font-weight: 200;
 }
 /*Fim sessão valores*/
+
+/*Sessão nosso projeto*/
+.ueye{
+  background-color: #fff;
+}
+
+.ueye p{
+  color: #000000;
+  font-weight: 400;
+}
+
+.ueye h1{
+  color: #4B4AD6;
+}
+
+.ueye h1::before{
+  background-image: linear-gradient(to bottom, #8c8cf0, #302F98);
+  height: 2.5vw;
+}
+
+.ueye .head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ueye .head img{
+  width: 4vw;
+}
+
+.lilas{
+  color: #4B4AD6;
+  font-weight: 500;
+}
+/*Fim sessão nosso projeto*/
+
+.ueye .img-software img{
+  width: 70vw;
+}
+
+.ueye .img-software{
+  position: relative;
+  bottom: 0;
+}
 
 /*Media query feito espepecialmente para o hamburger funcionar*/
 @media only screen and (max-width: 700px) {
@@ -383,13 +426,13 @@ a {
     z-index: 1;
   }
 
-  .quem-somos{
+  .holder{
       padding: 5rem 1rem;
   }
-  .texto-qs h1{
+  .texto h1{
     font-size: 4.8vw;
   }
-  .texto-qs p{
+  .texto p{
     font-size: 3.5vw;
     line-height: 4.4vw;
   }
@@ -424,6 +467,14 @@ a {
     padding-bottom: 2vw;
   }
 
+  .ueye .head img{
+    width:6vw;
+  }
+
+  .ueye h1::before{
+    height: 6vw;
+  }
+
 }
 
 /*Media query para tablets*/
@@ -435,14 +486,14 @@ a {
     padding: 0rem 4rem 5rem;
   }
 
-  .quem-somos{
+  .holder{
     padding: 5rem 4rem;
   }
 
-  .texto-qs h1{
+  .texto h1{
     font-size: 3vw;
   }
-  .texto-qs p{
+  .texto p{
     font-size: 1.5vw;
     line-height: 2vw;
   }
@@ -465,7 +516,7 @@ a {
   }
 
   .card-head h1{
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   .card-body{
@@ -474,6 +525,11 @@ a {
 
   .card-body p{
     font-size: 1.3vw;
+  }
+
+
+  .ueye h1::before{
+    height: 3.3vw;
   }
 }
 
@@ -485,13 +541,13 @@ a {
   .nav{
     padding: 0 14%;
   }
-  .quem-somos{
+  .holder{
     padding: 5rem 17rem;
   }
-  .texto-qs h1{
+  .texto h1{
   font-size: 2vw;
   }
-  .texto-qs p{
+  .texto p{
   font-size: 1vw;
   line-height: 1.7vw;
   }
