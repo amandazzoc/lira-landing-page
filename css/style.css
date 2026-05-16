@@ -743,3 +743,7 @@ a {
     padding: 0 14%;
   }
 }
+
+.holder-focusquest .texto b{
+  color: #000;
+}
