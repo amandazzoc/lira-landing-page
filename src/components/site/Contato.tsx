@@ -10,7 +10,7 @@ const emails = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-input bg-background/60 px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-accent";
+"w-full rounded-xl border border-input bg-surface/80 px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/80 focus:border-accent";
 
 export function Contato() {
   const [sent, setSent] = useState(false);
@@ -56,7 +56,7 @@ export function Contato() {
           <Reveal delay={120}>
             <form onSubmit={handleSubmit} noValidate className="mt-8 space-y-4">
               <div>
-                <label htmlFor="nome" className="mb-2 block text-sm text-muted-foreground">
+                <label htmlFor="nome" className="mb-2 block text-sm font-medium text-foreground">
                   Nome
                 </label>
                 <input
@@ -68,7 +68,7 @@ export function Contato() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="mb-2 block text-sm text-muted-foreground">
+                <label htmlFor="email" className="mb-2 block text-sm font-medium text-foreground">
                   Email
                 </label>
                 <input
@@ -80,7 +80,7 @@ export function Contato() {
                 />
               </div>
               <div>
-                <label htmlFor="mensagem" className="mb-2 block text-sm text-muted-foreground">
+                <label htmlFor="mensagem" className="mb-2 block text-sm font-medium text-foreground">
                   Mensagem
                 </label>
                 <textarea

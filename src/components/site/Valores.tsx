@@ -41,7 +41,7 @@ export function Valores() {
               <Reveal key={v.title} delay={i * 80}>
                 <article className="group h-full rounded-2xl border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-accent/60">
                   {/* Renderizando o ícone do Phosphor */}
-                  <div className="flex h-13 w-13 items-center justify-center rounded-full bg-blue-500/10">
+                  <div className="flex h-13 w-13 items-center justify-center rounded-full bg-accent/15 ring-1 ring-accent/30">
                     <Icon
                       size={32}
                       weight="regular"
